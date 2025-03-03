@@ -5,7 +5,6 @@ def parse_csv(lines, select=None, types=None, has_headers=True, delimiter=',', s
     '''
     Parse a CSV file into a list of records with type conversion.
     '''
-    print(type(lines))
     if select and not has_headers:
         raise RuntimeError('select argument requires column headers')
 
